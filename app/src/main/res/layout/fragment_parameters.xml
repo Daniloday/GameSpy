@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".ui.paramets.ParametrsFragment">
+
+    <TextView
+        android:id="@+id/players_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="267dp"
+        android:layout_marginBottom="23dp"
+        android:text="Введите количество игроков:"
+        android:textColor="@color/pink"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/players_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/players_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:inputType="number"
+        android:textColor="@color/pink"
+        android:backgroundTint="@color/pink"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/time_text"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/players_text" />
+
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="293dp"
+        android:text="Введите время в секундах:"
+        android:textColor="@color/pink"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/time_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="@color/pink"
+        android:inputType="number"
+        android:textColor="@color/pink"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/next_button"
+        app:layout_constraintEnd_toEndOf="@+id/next_button"
+        app:layout_constraintStart_toStartOf="@+id/next_button"
+        app:layout_constraintTop_toBottomOf="@+id/time_text" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="106dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="115dp"
+        android:backgroundTint="@color/pink"
+        android:textStyle="bold"
+        android:text="Вперед!"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_edit_text" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="244dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="64dp"
+        android:src="@drawable/diamond"
+        app:layout_constraintBottom_toTopOf="@+id/time_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

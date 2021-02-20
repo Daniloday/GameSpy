@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_start">
+
+    <fragment
+        android:id="@+id/navigation_parameters"
+        android:name="com.missclick.gamespy2.ui.paramets.ParametrsFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_parameters" />
+
+    <fragment
+        android:id="@+id/navigation_start"
+        android:name="com.missclick.gamespy2.ui.start.StartFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_start" />
+
+    <fragment
+        android:id="@+id/navigation_cards"
+        android:name="com.missclick.gamespy2.ui.cards.CardsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_cards" />
+
+    <fragment
+        android:id="@+id/navigation_time"
+        android:name="com.missclick.gamespy2.ui.time.TimeFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/time_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_last"
+        android:name="com.missclick.gamespy2.ui.last.LastFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/last_fragment" />
+
+</navigation>
